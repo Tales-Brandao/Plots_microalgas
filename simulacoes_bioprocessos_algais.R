@@ -1,4 +1,5 @@
-#Runge Kutta para o novo modelo do Tales
+#Runge Kutta para o novo modelo
+#simula√ß√µes realizadas a partir do modelo bacteriano adimensionalizado
 library(deSolve)
 require(ggplot2)
 
@@ -18,7 +19,7 @@ Modelo<-function(time,x,parms)
        })
 }
 
-#Par‚metros
+#Par√¢metros
 {
   Mumax=0.0821
   Kg=0.0
@@ -45,33 +46,33 @@ ci=c(0.24,0.1,0.019,0.003,0.0,0.0)
 
 Solution_modelo=as.data.frame(ode(times=tempo,y=ci,Modelo, parms=Param,method='rk4'))
 
-names(Solution_modelo)=c('Tempo','Algas','Glicose','NitrogÍnio','FÛsforo','Carboidratos','LipÌdios')
+names(Solution_modelo)=c('Tempo','Algas','Glicose','Nitrog√™nio','F√≥sforo','Carboidratos','Lip√≠dios')
 
-M=Mumax*Solution_modelo$Glicose*Solution_modelo$NitrogÍnio*Solution_modelo$FÛsforo/((Kg+Solution_modelo$Glicose)*(Kn+Solution_modelo$NitrogÍnio)*(Kp+Solution_modelo$FÛsforo))
+M=Mumax*Solution_modelo$Glicose*Solution_modelo$Nitrog√™nio*Solution_modelo$F√≥sforo/((Kg+Solution_modelo$Glicose)*(Kn+Solution_modelo$Nitrog√™nio)*(Kp+Solution_modelo$F√≥sforo))
 
 #graficos
 p1 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$Algas)) +
-  geom_point(col = 3, size = 1) +  labs(y = "X(t) (g/L)", x = "t (h)", title='ConcentraÁ„o Bacteriana') 
+  geom_point(col = 3, size = 1) +  labs(y = "X(t) (g/L)", x = "t (h)", title='Concentra√ß√£o Bacteriana') 
 p1;
 
-p2 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$FÛsforo)) +
-  geom_point(col = 6, size = 1) +  labs(y = "P(t) (g/L)", x = "t (h)", title ='Consumo de FÛsforo') 
+p2 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$F√≥sforo)) +
+  geom_point(col = 6, size = 1) +  labs(y = "P(t) (g/L)", x = "t (h)", title ='Consumo de F√≥sforo') 
 p2;
 
 p3 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$Glicose)) +
   geom_point(col = 2, size = 1) +  labs(y = "`G(t) (g/L)", x = "t (h)", title = "Consumo de Glicose") 
 p3;
 
-p4 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$NitrogÍnio)) +
-  geom_point(col = 1, size = 1) +  labs(y = "N(t) (g/L)", x = "t (h)", title = "Consumo de NitrogÍnio") 
+p4 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$Nitrog√™nio)) +
+  geom_point(col = 1, size = 1) +  labs(y = "N(t) (g/L)", x = "t (h)", title = "Consumo de Nitrog√™nio") 
 p4;
 
 #p5 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$Carboidratos)) +
- # geom_point(col = 7, size = 1) +  labs(y = "S(t) (g/L)", x = "t (h)", title ="ProduÁ„o de Carboidratos") 
+ # geom_point(col = 7, size = 1) +  labs(y = "S(t) (g/L)", x = "t (h)", title ="Produ√ß√£o de Carboidratos") 
 #p5;
 
-#p6 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$LipÌdios)) +
- # geom_point(col = 8, size = 1) +  labs(y = "L(t) (g/L)", x = "t (h)", title = "ProduÁ„o de LipÌdios") 
+#p6 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo,y=Solution_modelo$Lip√≠dios)) +
+ # geom_point(col = 8, size = 1) +  labs(y = "L(t) (g/L)", x = "t (h)", title = "Produ√ß√£o de Lip√≠dios") 
 #p6;
 
 p7 <- ggplot(Solution_modelo, aes(x=Solution_modelo$Tempo, y=M)) +
@@ -80,12 +81,12 @@ p7;
 
 
 #######################################################################################################################################
-x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Algas, ylab="X(t) (g/L)", xlab="t (h)",ylim=c(0,2.5), main= "ConcentraÁ„o Bacteriana", col=3, lwd=3, lty=1, type="l")
-x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$FÛsforo, ylab="P(t) (g/L)", xlab="t (h)", ylim=c(0,0.06), main= "Consumo de FÛsforo", col=6, lwd=3, lty=1, type="l")
+x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Algas, ylab="X(t) (g/L)", xlab="t (h)",ylim=c(0,2.5), main= "Concentra√ß√£o Bacteriana", col=3, lwd=3, lty=1, type="l")
+x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$F√≥sforo, ylab="P(t) (g/L)", xlab="t (h)", ylim=c(0,0.06), main= "Consumo de F√≥sforo", col=6, lwd=3, lty=1, type="l")
 x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Glicose, ylab="G(t) (g/L)", xlab="t (h)", main= "Consumo de Glicose", col=2, lwd=3, lty=1, type="l")
-x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$NitrogÍnio, ylab="N(t) (g/L)", xlab="t (h)", main= "Consumo de NitrogÍnio", col=1, lwd=3, lty=1, type="l")
-#x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Carboidratos, ylab="C(t) (g/L)", xlab="t (h)", main= "ProduÁ„o de Carboidratos", col=7, lwd=3, lty=1, type="l")
-#x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$LipÌdios, ylab="L(t) (g/L)", xlab="t (h)",ylim=c(0,0.20), main= "ProduÁ„o de LipÌdios", col=8, lwd=3, lty=1, type="l")
+x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Nitrog√™nio, ylab="N(t) (g/L)", xlab="t (h)", main= "Consumo de Nitrog√™nio", col=1, lwd=3, lty=1, type="l")
+#x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Carboidratos, ylab="C(t) (g/L)", xlab="t (h)", main= "Produ√ß√£o de Carboidratos", col=7, lwd=3, lty=1, type="l")
+#x11();plot(x=Solution_modelo$Tempo,y=Solution_modelo$Lip√≠dios, ylab="L(t) (g/L)", xlab="t (h)",ylim=c(0,0.20), main= "Produ√ß√£o de Lip√≠dios", col=8, lwd=3, lty=1, type="l")
 
 #Velocidade de cresciemtno "Mu"
 
