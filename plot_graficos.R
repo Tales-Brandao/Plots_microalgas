@@ -3,7 +3,7 @@ library(stringr)
 require(ggplot2)
 require(ggpubr)
 
-UFS <- read_excel("C:/Users/Tales/Downloads/UFS-1(1).xlsx")
+UFS <- read_excel("Inserir diretório para o arquivo .xlsx")
 View(UFS_1_1_)
 
 #ASU
@@ -24,9 +24,9 @@ View(UFS.P1)
 
 #graficos P1
 {
-OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 1') 
-NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
-P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 1') 
+OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 1') 
+NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
+P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 1') 
 
 X11();ggarrange(OD, NO3, P)
 }
@@ -40,9 +40,9 @@ View(UFS.P2)
 
 #graficos P2
 {
-OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 2') 
-NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
-P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 2') 
+OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 2') 
+NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
+P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 2') 
 
 X11();ggarrange(OD2, NO3_2, P2)
 }
@@ -56,9 +56,9 @@ View(UFS.P3)
 
 #graficos P3
 {
-  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 3') 
-  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
-  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 3') 
+  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 3') 
+  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
+  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 3') 
   
   X11();ggarrange(OD3, NO3_3, P3)
 }
@@ -72,9 +72,9 @@ View(UFS.P4)
 
 #graficos P4
 {
-  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 4') 
-  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
-  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 4') 
+  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 4') 
+  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
+  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 4') 
   
   X11();ggarrange(OD4, NO3_4, P4)
 }
@@ -88,9 +88,9 @@ View(UFS.P5)
 
 #graficos P5
 {
-  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 5') 
-  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
-  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 5') 
+  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 5') 
+  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
+  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 5') 
   
   X11();ggarrange(OD5, NO3_5, P5)
 }
@@ -104,9 +104,9 @@ View(UFS.P6)
 
 #graficos P6
 {
-  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 6') 
-  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
-  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 6') 
+  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 6') 
+  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
+  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 6') 
   
   X11();ggarrange(OD6, NO3_6, P6)
 }
@@ -129,9 +129,9 @@ View(UFS.P1)
 
 #graficos P1
 {
-  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 1') 
-  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
-  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 1') 
+  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 1') 
+  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
+  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 1') 
   
   X11();ggarrange(OD, NO3, P)
 }
@@ -145,9 +145,9 @@ View(UFS.P2)
 
 #graficos P2
 {
-  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 2') 
-  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
-  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 2') 
+  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 2') 
+  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
+  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 2') 
   
   X11();ggarrange(OD2, NO3_2, P2)
 }
@@ -161,9 +161,9 @@ View(UFS.P3)
 
 #graficos P3
 {
-  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 3') 
-  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
-  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 3') 
+  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 3') 
+  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
+  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 3') 
   
   X11();ggarrange(OD3, NO3_3, P3)
 }
@@ -177,9 +177,9 @@ View(UFS.P4)
 
 #graficos P4
 {
-  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 4') 
-  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
-  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 4') 
+  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 4') 
+  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
+  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 4') 
   
   X11();ggarrange(OD4, NO3_4, P4)
 }
@@ -193,9 +193,9 @@ View(UFS.P5)
 
 #graficos P5
 {
-  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 5') 
-  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
-  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 5') 
+  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 5') 
+  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
+  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 5') 
   
   X11();ggarrange(OD5, NO3_5, P5)
 }
@@ -209,9 +209,9 @@ View(UFS.P6)
 
 #graficos P6
 {
-  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 6') 
-  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
-  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 6') 
+  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 6') 
+  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
+  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 6') 
   
   X11();ggarrange(OD6, NO3_6, P6)
 }
@@ -234,9 +234,9 @@ View(UFS.P1)
 
 #graficos P1
 {
-  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 1') 
-  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
-  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 1') 
+  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 1') 
+  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
+  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 1') 
   
   X11();ggarrange(OD, NO3, P)
 }
@@ -250,9 +250,9 @@ View(UFS.P2)
 
 #graficos P2
 {
-  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 2') 
-  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
-  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 2') 
+  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 2') 
+  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
+  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 2') 
   
   X11();ggarrange(OD2, NO3_2, P2)
 }
@@ -266,9 +266,9 @@ View(UFS.P3)
 
 #graficos P3
 {
-  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 3') 
-  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
-  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 3') 
+  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 3') 
+  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
+  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 3') 
   
   X11();ggarrange(OD3, NO3_3, P3)
 }
@@ -282,9 +282,9 @@ View(UFS.P4)
 
 #graficos P4
 {
-  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 4') 
-  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
-  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 4') 
+  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 4') 
+  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
+  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 4') 
   
   X11();ggarrange(OD4, NO3_4, P4)
 }
@@ -298,9 +298,9 @@ View(UFS.P5)
 
 #graficos P5
 {
-  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 5') 
-  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
-  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 5') 
+  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 5') 
+  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
+  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 5') 
   
   X11();ggarrange(OD5, NO3_5, P5)
 }
@@ -314,9 +314,9 @@ View(UFS.P6)
 
 #graficos P6
 {
-  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 6') 
-  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
-  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 6') 
+  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 6') 
+  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
+  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 6') 
   
   X11();ggarrange(OD6, NO3_6, P6)
 }
@@ -339,9 +339,9 @@ View(UFS.P1)
 
 #graficos P1
 {
-  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 1') 
-  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
-  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 1') 
+  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 1') 
+  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
+  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 1') 
   
   X11();ggarrange(OD, NO3, P)
 }
@@ -355,9 +355,9 @@ View(UFS.P2)
 
 #graficos P2
 {
-  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 2') 
-  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
-  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 2') 
+  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 2') 
+  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
+  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 2') 
   
   X11();ggarrange(OD2, NO3_2, P2)
 }
@@ -371,9 +371,9 @@ View(UFS.P3)
 
 #graficos P3
 {
-  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 3') 
-  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
-  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 3') 
+  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 3') 
+  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
+  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 3') 
   
   X11();ggarrange(OD3, NO3_3, P3)
 }
@@ -387,9 +387,9 @@ View(UFS.P4)
 
 #graficos P4
 {
-  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 4') 
-  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
-  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 4') 
+  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 4') 
+  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
+  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 4') 
   
   X11();ggarrange(OD4, NO3_4, P4)
 }
@@ -403,9 +403,9 @@ View(UFS.P5)
 
 #graficos P5
 {
-  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 5') 
-  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
-  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 5') 
+  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 5') 
+  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
+  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 5') 
   
   X11();ggarrange(OD5, NO3_5, P5)
 }
@@ -419,9 +419,9 @@ View(UFS.P6)
 
 #graficos P6
 {
-  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 6') 
-  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
-  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 6') 
+  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 6') 
+  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
+  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 6') 
   
   X11();ggarrange(OD6, NO3_6, P6)
 }
@@ -450,9 +450,9 @@ View(UFS.P1)
 
 #graficos P1
 {
-  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 1') 
-  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
-  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 1') 
+  OD <- ggplot(UFS.P1, aes (y=UFS.P1$OD750, x=UFS.P1$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 1') 
+  NO3 <- ggplot(UFS.P1, aes (y=UFS.P1$`NO3 (mg/L)`,x=UFS.P1$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 1') 
+  P <- ggplot(UFS.P1, aes (y=UFS.P1$`P (mg/L)`, x=UFS.P1$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 1') 
   
   X11();ggarrange(OD, NO3, P)
 }
@@ -466,9 +466,9 @@ View(UFS.P2)
 
 #graficos P2
 {
-  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 2') 
-  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
-  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 2') 
+  OD2 <- ggplot(UFS.P2, aes (y=UFS.P2$OD750, x=UFS.P2$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 2') 
+  NO3_2 <- ggplot(UFS.P2, aes (y=UFS.P2$`NO3 (mg/L)`,x=UFS.P2$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 2') 
+  P2 <- ggplot(UFS.P2, aes (y=UFS.P2$`P (mg/L)`, x=UFS.P2$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 2') 
   
   X11();ggarrange(OD2, NO3_2, P2)
 }
@@ -482,9 +482,9 @@ View(UFS.P3)
 
 #graficos P3
 {
-  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 3') 
-  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
-  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 3') 
+  OD3 <- ggplot(UFS.P3, aes (y=UFS.P3$OD750, x=UFS.P3$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 3') 
+  NO3_3 <- ggplot(UFS.P3, aes (y=UFS.P3$`NO3 (mg/L)`,x=UFS.P3$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 3') 
+  P3 <- ggplot(UFS.P3, aes (y=UFS.P3$`P (mg/L)`, x=UFS.P3$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 3') 
   
   X11();ggarrange(OD3, NO3_3, P3)
 }
@@ -498,9 +498,9 @@ View(UFS.P4)
 
 #graficos P4
 {
-  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 4') 
-  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
-  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 4') 
+  OD4 <- ggplot(UFS.P4, aes (y=UFS.P4$OD750, x=UFS.P4$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 4') 
+  NO3_4 <- ggplot(UFS.P4, aes (y=UFS.P4$`NO3 (mg/L)`,x=UFS.P4$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 4') 
+  P4 <- ggplot(UFS.P4, aes (y=UFS.P4$`P (mg/L)`, x=UFS.P4$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 4') 
   
   X11();ggarrange(OD4, NO3_4, P4)
 }
@@ -514,9 +514,9 @@ View(UFS.P5)
 
 #graficos P5
 {
-  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 5') 
-  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
-  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 5') 
+  OD5 <- ggplot(UFS.P5, aes (y=UFS.P5$OD750, x=UFS.P5$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 5') 
+  NO3_5 <- ggplot(UFS.P5, aes (y=UFS.P5$`NO3 (mg/L)`,x=UFS.P5$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 5') 
+  P5 <- ggplot(UFS.P5, aes (y=UFS.P5$`P (mg/L)`, x=UFS.P5$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 5') 
   
   X11();ggarrange(OD5, NO3_5, P5)
 }
@@ -530,9 +530,9 @@ View(UFS.P6)
 
 #graficos P6
 {
-  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Dura��o (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade �tica Microalgal Reator 6') 
-  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
-  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Dura��o (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='F�sforo no Reator 6') 
+  OD6 <- ggplot(UFS.P6, aes (y=UFS.P6$OD750, x=UFS.P6$`Duração (dias)` )) + geom_point(col = 3, size = 1) + labs(y = "X(t) (DO 750)", x = "t (dias)", title='Densidade Ótica Microalgal Reator 6') 
+  NO3_6 <- ggplot(UFS.P6, aes (y=UFS.P6$`NO3 (mg/L)`,x=UFS.P6$`Duração (dias)`)) + geom_point(col = 1, size = 1) + labs(y = "NO3 (g/L)", x = "t (dias)", title='NO3 no Reator 6') 
+  P6 <- ggplot(UFS.P6, aes (y=UFS.P6$`P (mg/L)`, x=UFS.P6$`Duração (dias)`)) + geom_point(col = 2, size = 1) + labs(y = "P (g/L)", x = "t (dias)", title='Fósforo no Reator 6') 
   
   X11();ggarrange(OD6, NO3_6, P6)
 }
